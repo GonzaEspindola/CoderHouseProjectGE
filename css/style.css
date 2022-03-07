@@ -71,36 +71,36 @@ footer{
     height: 200px;
 }
 
-/*.integrantes__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    gap: 25px;
-    margin: 100px 50px 0px 50px;
+.slide{
+    position: relative;
+    animation: mymove 3s;
 }
 
-.integrantes {
-    display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    font-size: 20px;
-    padding: 0px 150px 0px 150px;
-    margin: 0px 0px 100px 100px;
-}*/
+.slide2 {
+    position: relative;
+    animation: mymove2 3s;
+}
+
+@keyframes mymove2 {
+    from {right: -400px;}
+    to {right: 0px;}
+}
 
 .name {
     font-weight:600;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .name__instrumentos{
     color: red;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .name__instrumentos--fecha {
     color: darkgreen;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /*--------Historia--------*/
@@ -120,7 +120,6 @@ footer{
     animation: mymove 3s;
 }
 
-
 #div1 {animation-timing-function: linear;}
 
 @keyframes mymove {
@@ -128,10 +127,12 @@ footer{
     to {left: 0px;}
 }
 
+
 .historia p {
     font-weight: lighter;
     font-size: 23px;
 }
+
 /*--------Discografia--------*/
 
 .lista{
@@ -193,5 +194,4 @@ padding: 0px 0x 30px;
     text-align: center;
     gap: 1px;
     }
-
 }
