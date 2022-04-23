@@ -1,0 +1,220 @@
+@import "variables.scss";
+
+@mixin alignCenter {
+    text-align: center;
+}
+
+@mixin alignJustified {
+    text-align: justify;
+}
+
+@mixin fontSizeWeight{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+*{
+    margin: $zeroValues;
+    padding: $zeroValues;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $bodyFont;
+}
+
+
+.title { 
+    margin: 0px;
+    font-size: 50px;
+    @include alignCenter;
+}
+
+.navbar_style {
+    background-color: $redColor; font-size: 30px;
+    background-image: linear-gradient(90deg, rgba(244,27,32,0.21098861908044464) 2%, rgba(236,42,18,1) 32%, rgba(225,55,14,1) 100%);
+}
+
+.video{
+    width: 100%; 
+    height: 500px; 
+    overflow: hidden;
+}
+
+.textDesign{
+    font-size: 25px;
+    color: black;
+    border-radius: 15px;
+    width: 200px;
+    background-image: linear-gradient(to top, #928787, #B2BABB);
+    @include alignCenter;
+}
+
+.textDesign:hover {
+    background-image: linear-gradient(to top, #08e600, #65d64f);
+    color: rgb(250, 250, 250);
+    transition: 0.6s;
+    width: 220px;
+    font-size: 30px;
+}
+
+.zoom:hover {
+    transform: scale(1.25);
+    transition: 0.9s;
+}
+
+
+.img-fluid{
+    width: 50%;    
+}
+
+footer img {
+    width: 20%;
+}
+
+footer{
+    background-color: $redColor;
+}
+
+#footer-image{
+    border-radius: 30px;
+}
+
+/*----Integrantes----*/
+
+.foto {
+    width: 200px;
+    height: 200px;
+}
+
+.slide{
+    position: $positionRelative;
+    animation: mymove 2s;
+}
+
+.slide2 {
+    position: $positionRelative;
+    animation: mymove2 2s;
+}
+
+@keyframes mymove2 {
+    from {right: -400px;}
+    to {right: 0px;}
+}
+
+.name {
+    font-weight:600;
+    font-size: 25px;
+}
+
+.name__instrumentos{
+    color: red;
+    @include fontSizeWeight;
+}
+
+.name__instrumentos--fecha {
+    color: darkgreen;
+    @include fontSizeWeight;
+}
+
+/*--------Historia--------*/
+.historia {
+    @include alignJustified;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 150px 20px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 7px outset rgb(255, 3, 3);
+    background-image: linear-gradient(#000, rgb(0,0,32));
+    color: rgb(247, 243, 0);
+    font-weight: bold;
+    position: $positionRelative;
+    animation: mymove 3s;
+}
+
+#div1 {animation-timing-function: linear;}
+
+@keyframes mymove {
+    from {left: -400px;}
+    to {left: 0px;}
+}
+
+.historia p {
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+/*--------Discografia--------*/
+
+.lista{
+    @include alignCenter;
+    list-style-position: inside;
+    flex-direction: column;
+    margin: 0px 400px 100px 400px;
+    padding: 0px 0px 0px 0px;
+    background-color: rgb(126, 114, 114);
+    color: rgb(0, 0, 0);
+}
+
+.portada {
+    width: 200px;  
+    height: 200px;
+}
+
+/*--------Contacto---------*/
+
+.fotoContacto {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.datos {
+    @include alignCenter;
+    display:flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0px 300px 100px 230px;
+    margin: 0px 0px 20px 100px;
+    font-weight: 600;
+}
+
+.botons {
+align-self: center;
+margin: 0px 0px 20px 0px;
+padding: 0px 0x 30px;
+}
+
+.notificaciones {
+    align-self: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 976px) {
+    .hidden_video {
+        display: none;
+    }
+
+    .historia div p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .integrantes__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    @include alignCenter;
+    }
+
+    .historia div p {
+        font-size: 13px;
+    }
+}
+
+
+

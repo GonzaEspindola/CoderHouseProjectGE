@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Smooch Sans", sans-serif;
+}
+
+.title {
+  margin: 0px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.navbar_style {
+  background-color: #ba3333;
+  font-size: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(2%, rgba(244, 27, 32, 0.210989)), color-stop(32%, #ec2a12), to(#e1370e));
+  background-image: linear-gradient(90deg, rgba(244, 27, 32, 0.210989) 2%, #ec2a12 32%, #e1370e 100%);
+}
+
+.video {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.textDesign {
+  font-size: 25px;
+  color: black;
+  border-radius: 15px;
+  width: 200px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#928787), to(#B2BABB));
+  background-image: linear-gradient(to top, #928787, #B2BABB);
+  text-align: center;
+}
+
+.textDesign:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#08e600), to(#65d64f));
+  background-image: linear-gradient(to top, #08e600, #65d64f);
+  color: #fafafa;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  width: 220px;
+  font-size: 30px;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.img-fluid {
+  width: 50%;
+}
+
+footer img {
+  width: 20%;
+}
+
+footer {
+  background-color: #ba3333;
+}
+
+#footer-image {
+  border-radius: 30px;
+}
+
+/*----Integrantes----*/
+.foto {
+  width: 200px;
+  height: 200px;
+}
+
+.slide {
+  position: relative;
+  -webkit-animation: mymove 2s;
+          animation: mymove 2s;
+}
+
+.slide2 {
+  position: relative;
+  -webkit-animation: mymove2 2s;
+          animation: mymove2 2s;
+}
+
+@-webkit-keyframes mymove2 {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes mymove2 {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.name {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.name__instrumentos {
+  color: red;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.name__instrumentos--fecha {
+  color: darkgreen;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/*--------Historia--------*/
+.historia {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 20px 150px 20px;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 7px outset #ff0303;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000020));
+  background-image: linear-gradient(#000, #000020);
+  color: #f7f300;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 3s;
+          animation: mymove 3s;
+}
+
+#div1 {
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.historia p {
+  font-weight: lighter;
+  font-size: 23px;
+}
+
+/*--------Discografia--------*/
+.lista {
+  text-align: center;
+  list-style-position: inside;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 400px 100px 400px;
+  padding: 0px 0px 0px 0px;
+  background-color: #7e7272;
+  color: black;
+}
+
+.portada {
+  width: 200px;
+  height: 200px;
+}
+
+/*--------Contacto---------*/
+.fotoContacto {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.datos {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 300px 100px 230px;
+  margin: 0px 0px 20px 100px;
+  font-weight: 600;
+}
+
+.botons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 0x 30px;
+}
+
+.notificaciones {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 976px) {
+  .hidden_video {
+    display: none;
+  }
+  .historia div p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .integrantes__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    text-align: center;
+  }
+  .historia div p {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
